@@ -138,12 +138,13 @@ public class Client {
 		System.out.println("Enter Your houseNo");
 		int houseNo = scanner.nextInt();
 		BankApplicationServiceImpl b = new BankApplicationServiceImpl();
-	
+		if (b.checkCustomerName(customerName) && b.checkCustomerNo(customerNo) && b.checkCustomerEmail(customerEmail)) {
 			Customer customer = new Customer(new Random().nextInt(1000) + 1, customerName, customerNo, customerEmail,
 					new Address(country, state, city, street, houseNo));
 			System.out.println("Enter the amount to which you want to open your account");
 			double amount = scanner.nextDouble();
 			service.create(amount, customer);
-		
+		} else
+			System.out.println("Details are Wrong");
 	}
 }
