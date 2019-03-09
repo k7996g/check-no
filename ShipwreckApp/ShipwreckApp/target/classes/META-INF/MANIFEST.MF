@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: ShipwreckApp
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: YAGARG
+Implementation-Vendor-Id: com.yashi
+Build-Jdk: 1.8.0_121
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/ShipwreckApp
+Created-By: Maven Integration for Eclipse
+
